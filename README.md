@@ -13,12 +13,12 @@ This is my personal SQL mastery project—a structured, self-paced journey throu
 
 ### 🌱 **Beginner Level**  
 ---  
-- **📊 Query Data (SELECT)** ✅  
+- **📊 Query Data (SELECT)** ✅  *Completed*  
   - `SELECT`, `FROM`, `WHERE`  
   - `ORDER BY`, `GROUP BY`, `HAVING`  
   - `DISTINCT`, `TOP`  
 
-- **🏗️ Data Definition (DDL)** ✅  
+- **🏗️ Data Definition (DDL)** ✅  *Completed*  
   - `CREATE`, `ALTER`, `DROP`  
 
 - **🛠️ Data Manipulation (DML)** 🚧 *In Progress*  
