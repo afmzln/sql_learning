@@ -27,8 +27,8 @@
 ************************************************************
          [SELECT ALL]
 ************************************************************
-Script Purpose:
-	This script retrieve all data from customers 
+Script Purpose:  
+    This script retrieves all customer data.  
 ===========================================================
 */
 	SELECT * FROM customers 
@@ -37,8 +37,8 @@ Script Purpose:
 ************************************************************
          [SELECT FEW COLUMNS]
 ************************************************************
-Script Purpose:
-	This script retrieve customer's name, country and score
+Script Purpose:  
+    This script retrieves the customer's name, country, and score.  
 =============================================================
 */
 	SELECT 
@@ -51,12 +51,13 @@ Script Purpose:
 ************************************************************
              [WHERE]
 ************************************************************
-Script Purpose:
-	This script is to filters rows before any groupings are made
-	Cannot use aggregate functions here
-Example clauses: 
-	1. retrieve score not equal to zero 
-	2. retrieve customers from GERMANY 
+Script Purpose:  
+    This script filters rows before any groupings are applied.  
+    Aggregate functions cannot be used here.  
+
+Example clauses:  
+    1. Retrieve scores not equal to zero.  
+    2. Retrieve customers from Germany.  
 =============================================================
 */
 	SELECT * 
@@ -74,11 +75,12 @@ Example clauses:
            [ORDER BY]
 ************************************************************
 Script Purpose:
-	This script to sorts the result set by specified column(s)
-	ASC (ascending) or DESC (descending) can be specified
-Example: 
-	1. retrieve all customers  and sort the results by the HIGHEST score first
-	2. retrieve  all customers  and sort the results by the LOWEST score first
+  This script sorts the result set by the specified column(s).
+  You can specify ASC (ascending) or DESC (descending) order.
+
+Examples:
+  1. Retrieve all customers and sort the results by the highest score first (DESC).
+  2. Retrieve all customers and sort the results by the lowest score first (ASC).
 =============================================================
 */
 	SELECT *
@@ -94,7 +96,7 @@ Example:
             [NESTED ORDER BY]
 ************************************************************
 Script Purpose:
-	This script retrieve  all customers  and sort the results by country and then by the HIGHEST score 
+	This script retrieves  all customers  and sorts the results by country and then by the HIGHEST score 
 =============================================================
 */
 	SELECT *
@@ -106,11 +108,12 @@ Script Purpose:
 		[GROUP BY]
 ************************************************************
 Script Purpose:
-	This script is to groups rows that have the same values into summary rows
-	Used with aggregate functions (COUNT, SUM, AVG, etc.)
-Example:
-	1. the total score for each country 
-	2. find the total score and total numbers of customers for each country 
+   This script groups rows that have the same values into summary rows.
+   It is used with aggregate functions (COUNT, SUM, AVG, etc.).
+
+Examples:
+  1. Calculate the total score for each country.
+  2. Find the total score and total number of customers for each country.
 =============================================================
 */
 	SELECT --3rd 
@@ -131,12 +134,13 @@ Example:
 		[HAVING]
 ************************************************************
 Script Purpose:
-	This script is to filters groups after the GROUP BY is applied
-	Can use aggregate functions here (unlike WHERE)
+   This script filters groups after the GROUP BY clause is applied.
+   Unlike WHERE, it allows the use of aggregate functions.
+
 Example:
-	To find the average score for each country 
-	considering only customers with a score not equal to 0
-	and return only those countries with an average score > 430 
+   Find the average score for each country,
+   considering only customers with a score not equal to 0,
+   and return only those countries with an average score > 430.
 =============================================================
 */  
 	SELECT 
@@ -153,11 +157,12 @@ Example:
 		[DISTINCT]
 ************************************************************
 Script Purpose:
-	This script is retrieves only unique/different values
-	Eliminates duplicate rows from the result
+  This script retrieves only unique/distinct values.
+  It eliminates duplicate rows from the results.
+
 Example:
-		to return unique list of all countries
-	=============================================================
+    Return a unique list of all countries.
+=============================================================
 */  
 	SELECT /*2nd*/ DISTINCT country /*3rd*/
 	FROM customers --1st--
@@ -167,11 +172,12 @@ Example:
 		[TOP(Limit)]
 ************************************************************
 Script Purpose:
-	This script is to limits the number of rows returned (SQL Server syntax)
-Example:
-		1. retrieve TOP 3 customers with HIGHEST score
-		2. retrieve lowest 2 customers based on score
-		3. get two most recent orders
+  This script limits the number of rows returned.
+
+Examples:
+  1. Retrieve the top 3 customers with the highest score.
+  2. Retrieve the 2 lowest-scoring customers.
+  3. Get the two most recent orders.
 =============================================================
 */         
 	SELECT TOP 3 * --3rd 
