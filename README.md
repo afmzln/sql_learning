@@ -26,9 +26,9 @@ This is my personal SQL mastery project—a structured, self-paced journey throu
 
 ---
 
-### 🔧 **Intermediate Level**  ✅  *Completed*  
+### 🔧 **Intermediate Level**  🚧 *In Progress*  
 ---  
-- **🔍 Filtering Data**  
+- **🔍 Filtering Data**  ✅  *Completed*  
   - Operators: `BETWEEN`, `LIKE`, `IN`  
   - Logical/Comparison Operators  
 
