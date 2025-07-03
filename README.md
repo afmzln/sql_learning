@@ -21,12 +21,12 @@ This is my personal SQL mastery project—a structured, self-paced journey throu
 - **🏗️ Data Definition (DDL)** ✅  *Completed*  
   - `CREATE`, `ALTER`, `DROP`  
 
-- **🛠️ Data Manipulation (DML)** 🚧 *In Progress*  
+- **🛠️ Data Manipulation (DML)** ✅  *Completed*  
   - `INSERT`, `UPDATE`, `DELETE`  
 
 ---
 
-### 🔧 **Intermediate Level**   🚧 *In Progress*  
+### 🔧 **Intermediate Level**  ✅  *Completed*  
 ---  
 - **🔍 Filtering Data**  
   - Operators: `BETWEEN`, `LIKE`, `IN`  
